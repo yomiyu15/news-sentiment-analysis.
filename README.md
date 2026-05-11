@@ -1,0 +1,63 @@
+# news-sentiment-analysis
+
+Nova Financial Solutions challenge: **Predicting Price Moves with News Sentiment** — EDA, technical indicators, and sentiment–return correlation.
+
+## Repository
+
+- Default branch: `main`
+- Task 1 development: branch `task-1`
+
+Remote (replace with your fork if needed):
+
+```text
+https://github.com/yomiyu15/news-sentiment-analysis.git
+```
+
+> Use a single `.` before `.git` in the URL (not `..git`).
+
+## Setup
+
+```powershell
+python -m venv venv
+.\venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+On macOS/Linux:
+
+```bash
+python -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+### FNSPID data
+
+Place the financial news dataset files provided for the challenge under `data/raw/` (for example `fnspid_news.csv` — adjust the filename in `notebooks/01_fnspid_eda.ipynb` if yours differs).
+
+## Project layout
+
+```text
+├── .github/workflows/unittests.yml   # CI: pytest on push/PR
+├── data/raw/                         # Local data (gitignored by default)
+├── notebooks/                        # Jupyter notebooks
+├── src/                              # Shared Python modules
+├── tests/                            # Unit tests
+└── scripts/                          # Optional CLI scripts
+```
+
+## Notebooks
+
+Start with `notebooks/01_fnspid_eda.ipynb` for Task 1 EDA (volume over time, publisher/domain analysis, headline length, CountVectorizer / word patterns).
+
+## Tests & CI
+
+```powershell
+pytest tests/ -v
+```
+
+Pushes to `main`, `task-1`, `task-2`, and `task-3` trigger the GitHub Actions workflow.
+
+## Commits
+
+This project follows [Conventional Commits](https://www.conventionalcommits.org/) (e.g. `feat:`, `docs:`, `chore:`, `test:`). Use `analyt:` only if your course explicitly allows that type; otherwise prefer `feat:` or `refactor:` for analysis code.
