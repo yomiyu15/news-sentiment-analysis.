@@ -1,0 +1,40 @@
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# IDE
+.idea/
+.vscode/*
+!.vscode/settings.json
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data (keep structure; ignore large raw files — remove the next line if you want to commit small samples)
+data/raw/*
+!data/raw/.gitkeep
+
+# Secrets
+.env
+*.pem
+
+# Coverage / pytest
+.coverage
+htmlcov/
+.pytest_cache/
