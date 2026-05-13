@@ -58,6 +58,10 @@ Then choose this kernel when opening `notebooks/01_fnspid_eda.ipynb`.
 
 Start with `notebooks/01_fnspid_eda.ipynb` for Task 1 EDA (volume over time, publisher/domain analysis, headline length, CountVectorizer / word patterns). Set **`USE_MOCK = True`** in that notebook to run the full pipeline on synthetic data without placing files in `data/raw/`.
 
+**Task 2:** `notebooks/02_task2_technical_indicators.ipynb` — optional `data/raw/stock_prices.csv`, else **yfinance**; `src/stock_prices.py`; **TA-Lib** SMA/EMA/RSI/MACD; **PyNance** return + vol; five-panel figure (price, RSI, MACD, return, vol).
+
+**TA-Lib:** GitHub Actions installs `libta-lib-dev` on Ubuntu before `pip install`. On Windows, `pip install TA-Lib` needs a compatible wheel for your Python version; if the build fails, use Conda or follow the [ta-lib-python](https://github.com/ta-lib/ta-lib-python) install notes.
+
 ## Tests & CI
 
 ```powershell

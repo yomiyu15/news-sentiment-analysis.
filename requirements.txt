@@ -13,5 +13,10 @@ nltk>=3.8.0,<4
 # Notebooks (ipykernel registers this env as a Jupyter kernel in VS Code/Cursor)
 ipykernel>=6.25.0,<7
 
+# Task 2 — prices, TA-Lib, PyNance
+yfinance>=0.2.36,<2
+TA-Lib>=0.4.28,<0.7
+pynance>=1.0.0,<2
+
 # Testing (CI)
 pytest>=7.4.0,<9
