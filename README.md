@@ -33,7 +33,15 @@ pip install -r requirements.txt
 
 ### FNSPID data
 
-Place the financial news dataset files provided for the challenge under `data/raw/` (for example `fnspid_news.csv` — adjust the filename in `notebooks/01_fnspid_eda.ipynb` if yours differs).
+Place the financial news dataset files provided for the challenge under `data/raw/` (for example `fnspid_news.csv`). The EDA notebook picks the first `*.csv` or `*.parquet` in that folder. **Parquet:** install `pyarrow` in the venv if you use `.parquet` files (`pip install pyarrow`).
+
+### Jupyter kernel (optional)
+
+```powershell
+.\venv\Scripts\python.exe -m ipykernel install --user --name=news-sentiment --display-name="Python (news-sentiment)"
+```
+
+Then choose this kernel when opening `notebooks/01_fnspid_eda.ipynb`.
 
 ## Project layout
 
