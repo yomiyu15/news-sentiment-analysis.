@@ -56,7 +56,7 @@ Then choose this kernel when opening `notebooks/01_fnspid_eda.ipynb`.
 
 ## Notebooks
 
-Start with `notebooks/01_fnspid_eda.ipynb` for Task 1 EDA (volume over time, publisher/domain analysis, headline length, CountVectorizer / word patterns).
+Start with `notebooks/01_fnspid_eda.ipynb` for Task 1 EDA (volume over time, publisher/domain analysis, headline length, CountVectorizer / word patterns). Set **`USE_MOCK = True`** in that notebook to run the full pipeline on synthetic data without placing files in `data/raw/`.
 
 ## Tests & CI
 
